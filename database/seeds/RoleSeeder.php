@@ -17,14 +17,12 @@ class RoleSeeder extends Seeder
         [
             'name' => 'Super Administrator',
             'slug' => md5(time().Str::random(60)),
-            'status' => 1,
-            'user_id' => 1
+            'status' => 1            
         ],
         [
             'name' => 'Administrator',
             'slug' => md5(time().Str::random(60)),
-            'status' => 1,
-            'user_id' => 1
+            'status' => 1            
         ]
         ]);
     }
