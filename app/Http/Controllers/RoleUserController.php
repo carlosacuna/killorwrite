@@ -45,9 +45,9 @@ class RoleUserController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($name)
+    public function show($slug)
     {
-        return RoleUsersModel::where('name', $name)->firstOrFail();
+        return RoleUsersModel::where('slug', $slug)->firstOrFail();
         //
     }
 

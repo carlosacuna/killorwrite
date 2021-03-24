@@ -18,7 +18,7 @@ class CreateRolUsersTable extends Migration
             $table->string('name');
             $table->string('slug')->unique();
             $table->string('email')->unique();
-            $table->string('nickname')();
+            $table->string('nickname');
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->boolean('status');

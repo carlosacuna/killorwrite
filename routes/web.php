@@ -17,7 +17,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::resource('/roles','RoleController');
-Route::resource('/rol_users','RoleUserController');
+Route::resource('/roles','RoleController@show');
+Route::resource('/rol_users','RoleUserController@show');
 
 
