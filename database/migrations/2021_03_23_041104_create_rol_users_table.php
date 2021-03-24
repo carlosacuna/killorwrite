@@ -15,8 +15,8 @@ class CreateRolUsersTable extends Migration
     {
         Schema::create('rol_users', function (Blueprint $table) {
             $table->id();
-            $table->string('slug')->unique();
             $table->string('name');
+            $table->string('slug')->unique();
             $table->string('email')->unique();
             $table->string('nickname')();
             $table->timestamp('email_verified_at')->nullable();
