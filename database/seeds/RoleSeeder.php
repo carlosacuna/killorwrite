@@ -14,16 +14,20 @@ class RoleSeeder extends Seeder
     public function run()
     {
         DB::table('roles')->insert([
-        [
-            'name' => 'Super Administrator',
-            'slug' => md5(time().Str::random(60)),
-            'status' => 1            
-        ],
-        [
-            'name' => 'Administrator',
-            'slug' => md5(time().Str::random(60)),
-            'status' => 1            
-        ]
+            [
+                'name' => 'Super Administrator',
+                'slug' => md5(time().Str::random(60)),
+                'status' => 1
+            ], [
+                'name' => 'tito',
+                'slug' => md5(time().Str::random(60)),
+                'status' => 1
+            ],
+            [
+                'name' => 'Administrator',
+                'slug' => md5(time().Str::random(60)),
+                'status' => 1
+            ]
         ]);
     }
 }
