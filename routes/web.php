@@ -18,5 +18,6 @@ Route::get('/', function () {
 });
 
 Route::resource('/roles','RoleController');
+Route::resource('/rol_users','RoleUserController');
 
 
